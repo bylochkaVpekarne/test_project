@@ -218,3 +218,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dependencies (only needed if you later use npm)
+node_modules/
+
+# Build output (only if you later use a build tool)
+dist/
+build/
+
+# Environment and secret files
+.env
+.env.*
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+tmp/
+temp/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE folders
+.vscode/
+.idea/
+*.swp
+*.swo
