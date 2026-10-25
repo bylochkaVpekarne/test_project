@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> <!--  Кодировка страницы -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--  Мета-тег для адаптивного дизайна -->
     <link rel="stylesheet" href="css/style.css"> <!--  Ссылка на файл стилей -->
-    <title>Document</title>
+    <title>test project</title>
 </head>
 <body>
     <label for="">ddd</label> <!-- <label></label> - это метка -->
@@ -16,5 +16,44 @@
     <h5>text</h5>
     <p>text</p> <!-- <p></p> - это абзац -->
     <button>text</button> <!-- <button></button> - это кнопка -->
+
+    <label for="hours">Количество часов</label>
+    <input 
+    type="number"
+    id="hours"
+    name="hours"
+    min="0"
+    step="0.5"
+    >   <!-- input - Ввод -->
+        <!-- type - Поле предназначено для числового ввода. -->
+        <!-- id - Уникальный идентификатор поля. Позже JavaScript сможет найти его по этому идентификатору. -->
+        <!-- name - Имя поля, полезное при отправке данных формы. -->
+        <!-- min - Задаёт минимальное допустимое значение. -->
+        <!-- step - Задаёт шаг изменения числа. -->
+        <!-- id используется для связи label и input так что надо указывать одинаковое название -->
+
+    <label for="price">Ставка за час работы</label>
+    <input 
+    type="number"
+    id="price"
+    name="price"
+    min="1"
+    step="1"
+    >
+
+    <label for="discount">Скидка за весь заказ</label>
+    <input 
+    type="number"
+    id="discount"
+    name="discount"
+    min="0"
+    step="1"
+    >
+
+    <button type="button">Посчитать</button> <!-- Самая обычная кнопка, даже не знаю зачем тут type-->
+    <div id="result">
+        <p>Конечная стоимость</p>
+        <p>Тут будет результат</p>
+    </div> <!-- коробочка с названием result для дальнейшей связки с js-->
 </body>
 </html>
