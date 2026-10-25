@@ -8,9 +8,9 @@ body {
     font-size: 15px;
     display: flex; /*включаю флекс бокс для всех этих блоков*/
     flex-direction: column; /*делаю направление сверху вниз*/
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: aquamarine;
-    row-gap: 12px;
+    flex-wrap: nowrap; /*при нехватке места строки будут сжиматься, а не переноситься на другую строку*/
+    justify-content: center; /*выравнивает все элементы по вертикали*/
+    align-items: center; /*выравнивает все элементы по горизонтали*/
+    background-color: aquamarine; /*цвет фона блока*/
+    row-gap: 12px; /*внутренний отступ между строками*/
 }
