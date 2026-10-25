@@ -1,3 +1,16 @@
 body {
     background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif; /*Шрифты которые будут использываться на всем что есть в body*/
+}
+
+.blocks {
+    padding: 15px;
+    font-size: 15px;
+    display: flex; /*включаю флекс бокс для всех этих блоков*/
+    flex-direction: column; /*делаю направление сверху вниз*/
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    row-gap: 12px;
 }
