@@ -1,1 +1,27 @@
+.feed-container {
+    column-count: 4;
+    column-gap: 16px;
+    width: 75%;
+}
 
+.pin-card {
+    background-color: #f7f7f7;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    break-inside: avoid;
+    overflow: hidden;
+    padding: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.pin-card img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.pin-card p {
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+}
