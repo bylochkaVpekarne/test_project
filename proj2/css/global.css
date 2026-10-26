@@ -13,3 +13,79 @@ body {
     width: 50px;
     height: 50px;
 }
+
+/* Общая шапка сайта */
+header {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 20px;
+}
+
+/* Поисковая строка */
+.search-container {
+    background-color: black;
+    border-radius: 24px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    color: #FFFFFF;
+}
+
+.search-container input {
+    border: none;
+    background: transparent;
+    flex-grow: 1;
+    outline: none;
+    color: white;
+}
+
+.search-container label {
+    color: #FFFFFF;
+    margin-right: 8px;
+}
+
+/* Общий макет (две колонки) */
+.content-layout {
+    display: flex;
+}
+
+/* Боковая панель навигации */
+.sidebar {
+    width: 80px;
+    min-height: calc(100vh - 70px);
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Основная область контента */
+main {
+    flex-grow: 1;
+    padding: 24px;
+}
+
+/* Размеры иконок */
+.create {
+    width: 50px;
+    height: 50px;
+}
+
+.home {
+    width: 50px;
+    height: 50px;
+}
+
+.your-board {
+    width: 46px;
+    height: 46px;
+}
