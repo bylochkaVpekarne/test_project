@@ -10,3 +10,6 @@ async def read_item(item_id: int):
 
 if __name__ == "__main__":
     uvicorn.run("main:app", reload=True)
+
+
+# Чупапи пуняню

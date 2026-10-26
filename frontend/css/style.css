@@ -1,16 +1,65 @@
-body {
-    background-color: #ffffff;
+html, body {
+    min-height: 100%;
+    min-width: 100%;
     font-family: Arial, Helvetica, sans-serif; /*Шрифты которые будут использываться на всем что есть в body*/
 }
 
 .blocks {
     padding: 15px;
-    font-size: 15px;
+    font-size: 32px;
     display: flex; /*включаю флекс бокс для всех этих блоков*/
     flex-direction: column; /*делаю направление сверху вниз*/
     flex-wrap: nowrap; /*при нехватке места строки будут сжиматься, а не переноситься на другую строку*/
     justify-content: center; /*выравнивает все элементы по вертикали*/
     align-items: center; /*выравнивает все элементы по горизонтали*/
-    background-color: aquamarine; /*цвет фона блока*/
+    /* background-color: aquamarine; /* цвет фона блока*/
     row-gap: 12px; /*внутренний отступ между строками*/
+}
+
+.gradient-background {
+  /* background: radial-gradient(50% 123.47% at 50% 50%, #7fffd4 0%, #005072 100%),
+    linear-gradient(121.28deg, #669600 0%, #00ff15 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #bbff00 0%, #51d500 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;  */
+
+    /*background: linear-gradient(90deg,rgba(0, 183, 255, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); */
+    background: radial-gradient(circle at 110% -10%,rgba(135, 0, 108, 1) 0%, rgba(20, 0, 56, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-color {
+    color: #ffffff;
+}
+.btn.btn-primary {
+    
+    background-color: #2200ff; /* Цвет фона кнопки */
+    border: 2px #1600a3 solid; /* Рамка кнопки */
+    color: white; /* Цвет текста в кнопке */
+    padding: 15px 32px; /* Отступы внутри кнопки от текста */
+    text-align: center; /* Размещение текста внутри кнопки */
+    text-decoration: none; /* Толстый, подчеркнутый, печеречкнутый и тд */
+    font-size: 16px; /* Размер текста */
+    margin: 4px 2px; /* Отступ кнопки от других элементов. верх + низ, право + лево */
+    cursor: pointer; /* Изменяет курсор на руку при наведении на кнопку */
+    border-radius: 8px; /* Закругление углов кнопки */
+    transition: background-color 0.45s ease; /* Плавный переход цвета фона при наведении */
+    
+}
+
+.btn.btn-primary:hover {
+    background-color: #0044ff; /* Цвет фона кнопки при наведении */
+    box-shadow: 0px 0px 25px #0044ff; /* Тень кнопки при наведении */
+}
+
+
+.btn.btn-primary.pressed {
+    background-color: rgba(135, 0, 108, 1);
+    transition: background-color 0.2s ease;
+}
+
+.btn.btn-primary:focus {
+    outline: none;
+    box-shadow: none;
 }
