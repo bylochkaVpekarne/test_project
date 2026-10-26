@@ -1,0 +1,60 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 20px;
+}
+
+.search-container {
+    background-color: black;
+    border-radius: 24px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    color: #FFFFFF;
+}
+
+.search-container input {
+    border: none;
+    background: transparent;
+    flex-grow: 1;
+    outline: none;
+}
+
+.search-container label {
+    color: #FFFFFF;
+    margin-right: 8px;
+}
+
+.sidebar {
+    width: 80px;
+    min-height: calc(100vh - 70px);
+    background-color: lightgray;
+    padding: 16px;
+}
+
+.content-layout {
+    display: flex;
+}
+
+main {
+    flex-grow: 1;
+    padding: 24px;
+}
+
+.create {
+    width: 50px;
+    height: 50px;
+}
+
+.home {
+    width: 50px;
+    height: 50px;
+}
+
+.your-board {
+    width: 50px;
+    height: 50px;
+}
